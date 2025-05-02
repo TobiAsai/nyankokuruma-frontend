@@ -9,13 +9,13 @@ import Menu from "./components/menu";
 const Main = () => {
   const headerImagesList: imageInfo[] = [
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/topImg/1.jpeg",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/topImg/1.jpeg",
       title: "top1",
       imageId: Math.random(),
       linkTo: null,
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/topImg/2.jpg",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/topImg/2.jpg",
       title: "top2",
       imageId: Math.random(),
       linkTo: null,
@@ -24,31 +24,31 @@ const Main = () => {
 
   const brandsImagesList: imageInfo[] = [
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/brands/1.png",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/brands/1.png",
       title: "aniplex",
       imageId: Math.random(),
       linkTo: "/",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/brands/2.png",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/brands/2.png",
       title: "annulus",
       imageId: Math.random(),
       linkTo: "/",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/brands/3.png",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/brands/3.png",
       title: "binding",
       imageId: Math.random(),
       linkTo: "/",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/brands/4.png",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/brands/4.png",
       title: "freeing",
       imageId: Math.random(),
       linkTo: "/",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/brands/5.png",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/brands/5.png",
       title: "goodsmile",
       imageId: Math.random(),
       linkTo: "/",
@@ -92,7 +92,7 @@ const Main = () => {
 
   const goodsInfoList: goodsInfo[] = [
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/goodsImg/airu.jpg",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/goodsImg/airu.jpg",
       title: "airu",
       goodsId: Math.random(),
       classification: "香香妹子",
@@ -101,7 +101,7 @@ const Main = () => {
       linkTo: "/goods/1",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/goodsImg/dusk.jpg",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/goodsImg/dusk.jpg",
       title: "dusk",
       goodsId: Math.random(),
       classification: "香香妹子",
@@ -110,7 +110,7 @@ const Main = () => {
       linkTo: "/goods/2",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/goodsImg/hyperBody.webp",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/goodsImg/hyperBody.webp",
       title: "hyperBody",
       goodsId: Math.random(),
       classification: "香香妹子",
@@ -119,7 +119,7 @@ const Main = () => {
       linkTo: "/goods/3",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/goodsImg/miku.jpg",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/goodsImg/miku.jpg",
       title: "miku",
       goodsId: Math.random(),
       classification: "香香妹子",
@@ -128,7 +128,7 @@ const Main = () => {
       linkTo: "/goods/4",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/goodsImg/noel.jpg",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/goodsImg/noel.jpg",
       title: "noel",
       goodsId: Math.random(),
       classification: "Hololive",
@@ -137,7 +137,7 @@ const Main = () => {
       linkTo: "/goods/5",
     },
     {
-      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/VueHomework/images/goodsImg/rokixi.jpg",
+      url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/goodsImg/rokixi.jpg",
       title: "rokixi",
       goodsId: Math.random(),
       classification: "香香妹子",
