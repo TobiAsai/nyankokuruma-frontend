@@ -1,8 +1,9 @@
-"use client";
+// "use client";
 
+import MainGoods from "@/components/goods/mainGoods/main";
+import PageDown from "@/components/goods/pageDown/main";
+import PageTop from "@/components/goods/pageTop";
 import { goodsNavInfo, mainGoodsInfo } from "@/types/goodsInfo";
-import Link from "next/link";
-import { useParams } from "next/navigation";
 
 const Goods = () => {
   let goodsNavInfo = new Map<string, goodsNavInfo>();
@@ -31,29 +32,11 @@ const Goods = () => {
   };
 
   return (
-    <div>
-      <ul className="list-none flex">
-        <li className="mx-1 text-orange-100">
-          <Link href={"/"}>首頁</Link>
-        </li>
-        <li className="mx-1">/</li>
-        <li className="mx-1">
-          <Link href={"/goods"}>商品</Link>
-        </li>
-        <li className="mx-1">/</li>
-        <li className="mx-1">
-          <Link href={mainGoodsInfo.goodsNavInfo.get("first")!!.linkTo}>
-            {mainGoodsInfo.goodsNavInfo.get("first")!!.name}
-          </Link>
-        </li>
-        <li className="mx-1">/</li>
-        <li className="mx-1">
-          <Link href={mainGoodsInfo.goodsNavInfo.get("second")!!.linkTo}>
-            {mainGoodsInfo.goodsNavInfo.get("second")!!.name}
-          </Link>
-        </li>
-      </ul>
-    </div>
+    <>
+      <PageTop goodsNavInfo={mainGoodsInfo.goodsNavInfo} />
+      <MainGoods />
+      <PageDown />
+    </>
   );
 };
 

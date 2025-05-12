@@ -33,4 +33,8 @@ interface mainGoodsInfo {
   goodsNavInfo: Map<string, goodsNavInfo>
 }
 
-export type { goodsInfo, goodsImageInfo, goodsInfoProps, goodsImageInfoProps, goodsNavInfo, mainGoodsInfo };
+interface pageTopProps {
+  goodsNavInfo: Map<string, goodsNavInfo>
+}
+
+export type { goodsInfo, goodsImageInfo, goodsInfoProps, goodsImageInfoProps, goodsNavInfo, mainGoodsInfo, pageTopProps };

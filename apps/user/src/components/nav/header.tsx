@@ -48,8 +48,8 @@ const Header = () => {
       url: "/",
       haveSecondary: true,
       secondaryNav: [
-        { info: "🐈帳號登入", infoId: Math.random(), url: "/" },
-        { info: "🐈帳號註冊", infoId: Math.random(), url: "/" },
+        { info: "🐈帳號登入", infoId: Math.random(), url: "/login" },
+        { info: "🐈帳號註冊", infoId: Math.random(), url: "/register" },
       ],
     },
   ];
