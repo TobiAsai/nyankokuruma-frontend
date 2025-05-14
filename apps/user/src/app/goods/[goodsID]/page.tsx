@@ -26,7 +26,6 @@ const Goods = () => {
       classification: "香香妹子",
       goodsName: "【PVC預購】1/7 天使警察 艾露‧弗拉提亞;",
       price: 5000,
-      linkTo: "/goods/1",
     },
     goodsNavInfo: goodsNavInfo,
   };
@@ -34,7 +33,7 @@ const Goods = () => {
   return (
     <>
       <PageTop goodsNavInfo={mainGoodsInfo.goodsNavInfo} />
-      <MainGoods />
+      <MainGoods goodsInfo={mainGoodsInfo.goodsInfo} />
       <PageDown />
     </>
   );

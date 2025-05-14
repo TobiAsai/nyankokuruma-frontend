@@ -12,13 +12,11 @@ const Main = () => {
       url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/topImg/1.jpeg",
       title: "top1",
       imageId: Math.random(),
-      linkTo: null,
     },
     {
       url: "https://raw.githubusercontent.com/TobiAsai/imagesBed/refs/heads/main/images/topImg/2.jpg",
       title: "top2",
       imageId: Math.random(),
-      linkTo: null,
     },
   ];
 

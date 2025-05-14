@@ -2,7 +2,7 @@ interface imageInfo {
   url: string;
   title: string;
   imageId: number;
-  linkTo: string | null;
+  linkTo?: string;
 }
 
 interface imageInfoProps {

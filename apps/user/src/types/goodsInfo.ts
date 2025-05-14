@@ -17,10 +17,13 @@ interface goodsInfo {
   classification: string;
   goodsName: string;
   price: number;
-  linkTo: string;
+  linkTo?: string;
 }
 
 interface goodsInfoProps {
+  goodsInfo: goodsInfo;
+}
+interface goodsInfoListProps {
   goodsInfoList: goodsInfo[];
 }
 
@@ -37,4 +40,4 @@ interface pageTopProps {
   goodsNavInfo: Map<string, goodsNavInfo>
 }
 
-export type { goodsInfo, goodsImageInfo, goodsInfoProps, goodsImageInfoProps, goodsNavInfo, mainGoodsInfo, pageTopProps };
+export type { goodsInfo, goodsImageInfo, goodsInfoProps, goodsImageInfoProps, goodsNavInfo, mainGoodsInfo, pageTopProps, goodsInfoListProps };

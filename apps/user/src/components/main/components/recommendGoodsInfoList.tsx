@@ -1,13 +1,13 @@
 "use client";
 
-import { goodsInfoProps } from "@/types/goodsInfo";
+import { goodsInfoListProps } from "@/types/goodsInfo";
 import Link from "next/link";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const GoodsImage = ({ goodsInfoList }: goodsInfoProps) => {
+const GoodsImage = ({ goodsInfoList }: goodsInfoListProps) => {
   return (
     <div className="ml-60 mr-5 w-4/5 h-full">
       <Swiper
