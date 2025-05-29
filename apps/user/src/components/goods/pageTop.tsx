@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
-import { pageTopProps } from '@/types/goodsInfo';
+import { pageTopProps } from "@/types/goodsInfo";
 
-const PageTop = ({goodsNavInfo}: pageTopProps) => {
+const PageTop = ({ goodsNavInfo }: pageTopProps) => {
   return (
     <div>
       <ul className="list-none flex">
@@ -27,7 +27,7 @@ const PageTop = ({goodsNavInfo}: pageTopProps) => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default PageTop
+export default PageTop;

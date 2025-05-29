@@ -5,7 +5,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import React from "react";
+import React, { useState } from "react";
 
 const MainGoodsLeft = ({ imageInfoList }: imageInfoProps) => {
   const imagesMap = new Map<number, imageInfo>();
@@ -13,27 +13,33 @@ const MainGoodsLeft = ({ imageInfoList }: imageInfoProps) => {
     imagesMap.set(imageInfo.imageId, imageInfo);
   });
 
+  const [imageSelectedId, setImageSelectedId] = useState(0);
+
   return (
     <div>
-      <div>
+      <div className="w-70 h-100">
         <img
-          src={imagesMap.get(imageInfoList[0].imageId)?.url}
-          alt={imagesMap.get(imageInfoList[0].imageId)?.title}
+          src={imagesMap.get(imageInfoList[imageSelectedId].imageId)?.url}
+          alt={imagesMap.get(imageInfoList[imageSelectedId].imageId)?.title}
+          className="w-full h-full"
         />
       </div>
-      <div className="w-">
+      <div className="w-70 h-40">
         <Swiper
           loop={true}
           modules={[Autoplay, Navigation, Pagination]}
           navigation={true}
-          slides-per-view={3}
+          slidesPerView={3}
         >
           {imageInfoList.map((imageInfo) => (
             <SwiperSlide key={imageInfo.imageId}>
+              <button onClick={() => setImageSelectedId(imageInfoList.findIndex(img => img.imageId === imageInfo.imageId))}>
               <img
                 src={imagesMap.get(imageInfo.imageId)?.url}
                 alt={imagesMap.get(imageInfo.imageId)?.title}
               />
+              </button>
+              
             </SwiperSlide>
           ))}
         </Swiper>

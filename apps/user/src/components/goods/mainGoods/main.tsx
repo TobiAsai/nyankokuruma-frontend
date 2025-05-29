@@ -31,9 +31,9 @@ const MainGoods = ({goodsInfo}: goodsInfoProps) => {
 
 
   return (
-    <div className='flex flex-row justify-between'>
+    <div className='flex flex-row w-1/2 h-full m-auto mt-20'>
       <MainGoodsLeft imageInfoList={images} />
-      <MainGoodsRight />
+      <MainGoodsRight goodsInfo={goodsInfo} />
     </div>
   )
 }

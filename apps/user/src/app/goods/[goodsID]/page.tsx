@@ -24,7 +24,7 @@ const Goods = () => {
       title: "airu",
       goodsId: Math.random(),
       classification: "香香妹子",
-      goodsName: "【PVC預購】1/7 天使警察 艾露‧弗拉提亞;",
+      goodsName: "【PVC預購】1/7 天使警察 艾露‧弗拉提亞",
       price: 5000,
     },
     goodsNavInfo: goodsNavInfo,
