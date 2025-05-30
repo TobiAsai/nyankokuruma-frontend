@@ -1,8 +1,11 @@
 import React from 'react'
+import  { goodsInfoProps } from '@/types/goodsInfo'
 
-const Arrived = () => {
+const Arrived = ({goodsInfo}: goodsInfoProps) => {
   return (
-    <div>Arrived</div>
+    <div>
+
+    </div>
   )
 }
 

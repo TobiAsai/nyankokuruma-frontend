@@ -25,6 +25,8 @@ const Goods = () => {
       goodsId: Math.random(),
       classification: "香香妹子",
       goodsName: "【PVC預購】1/7 天使警察 艾露‧弗拉提亞",
+      brand: "Good Smile",
+      releaseDtae: "2025年10月",
       price: 5000,
     },
     goodsNavInfo: goodsNavInfo,
@@ -34,7 +36,7 @@ const Goods = () => {
     <>
       <PageTop goodsNavInfo={mainGoodsInfo.goodsNavInfo} />
       <MainGoods goodsInfo={mainGoodsInfo.goodsInfo} />
-      <PageDown />
+      <PageDown goodsInfo={mainGoodsInfo.goodsInfo} />
     </>
   );
 };

@@ -1,7 +1,7 @@
 interface goodsNavInfo {
-  navId: number
-  name: string
-  linkTo: string
+  navId: number;
+  name: string;
+  linkTo: string;
 }
 
 interface goodsImageInfo {
@@ -16,6 +16,8 @@ interface goodsInfo {
   goodsId: number;
   classification: string;
   goodsName: string;
+  releaseDtae?: string;
+  brand?: string;
   price: number;
   linkTo?: string;
 }
@@ -32,12 +34,21 @@ interface goodsImageInfoProps {
 }
 
 interface mainGoodsInfo {
-  goodsInfo: goodsInfo
-  goodsNavInfo: Map<string, goodsNavInfo>
+  goodsInfo: goodsInfo;
+  goodsNavInfo: Map<string, goodsNavInfo>;
 }
 
 interface pageTopProps {
-  goodsNavInfo: Map<string, goodsNavInfo>
+  goodsNavInfo: Map<string, goodsNavInfo>;
 }
 
-export type { goodsInfo, goodsImageInfo, goodsInfoProps, goodsImageInfoProps, goodsNavInfo, mainGoodsInfo, pageTopProps, goodsInfoListProps };
+export type {
+  goodsInfo,
+  goodsImageInfo,
+  goodsInfoProps,
+  goodsImageInfoProps,
+  goodsNavInfo,
+  mainGoodsInfo,
+  pageTopProps,
+  goodsInfoListProps,
+};
